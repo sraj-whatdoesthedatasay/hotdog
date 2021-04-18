@@ -18,7 +18,7 @@ if page == 'Contact Info':
     st.write('Contact info: 804 123-4567')
 
 if page == 'Hotdog or not':
-    st.title("Upload + HotDog Classification Example")
+    st.title("Is the picture a hot-dog or not?")
     new_model = tf.keras.models.load_model('saved_model/my_model')
 
     file = st.file_uploader("Upload your image here...", type=["png","jpg","jpeg"])
@@ -44,6 +44,8 @@ if page == 'Hotdog or not':
         else:
             st.write('Its deinitely not a hotdog')
 
+        st.write('The solution here is developed using Convolution Neural Network trained on ~1500 pictures of hot-dogs and of not-hot-dogs!')
+        st.write('Expected accuracy is ~65% given the limitations of the model-size that can be placed on Git-Hub as well as the available training data')
 
         #uploaded_file = st.file_uploader("Choose an image...", type="jpg")
     # if uploaded_file is not None:
