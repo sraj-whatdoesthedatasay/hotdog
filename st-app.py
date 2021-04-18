@@ -33,8 +33,8 @@ if page == 'Hotdog or not':
 
         label = new_model.predict(hotdog_array)
 
-        st.write('The probability of recognizing as hotdog')
-        st.write(label[0][0])
+        #st.write('The probability of recognizing as hotdog')
+        #st.write(label[0][0])
         if label[0][0] > 0.8:
             st.write('It is definitely a hotdog! Enjoy!')
         elif label[0][0] > 0.5:
