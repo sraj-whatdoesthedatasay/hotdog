@@ -42,10 +42,10 @@ if page == 'Hotdog or not':
         elif label[0][0] > 0.3:
             st.write('It is probably not a hot dog!')
         else:
-            st.write('Its deinitely not a hotdog')
+            st.write('Its definitely not a hotdog')
 
-        st.write('The solution here is developed using Convolution Neural Network trained on ~1500 pictures of hot-dogs and of not-hot-dogs!')
-        st.write('Expected accuracy is ~65% given the limitations of the model-size that can be placed on Git-Hub as well as the available training data')
+        st.write(**'The solution here is developed using Convolution Neural Network trained on ~1500 pictures of hot-dogs and of not-hot-dogs!**')
+        st.write(**'Expected accuracy is ~70% given the limitations of the model-size that can be placed on Git-Hub as well as the available training data**')
 
         #uploaded_file = st.file_uploader("Choose an image...", type="jpg")
     # if uploaded_file is not None:
